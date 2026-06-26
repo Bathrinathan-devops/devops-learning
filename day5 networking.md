@@ -1,0 +1,14 @@
+# Network command
+- hostname -I - Shows you IP
+- ping google.con - Test internet connecting
+- traceroute google.com - show route website
+- netstat -tuln - show open ports
+- curl google.com  - fetch wegpage content
+- nslookup google.com - DNS loop
+- wget link - Dowlnload file from internet
+- ssh user@IPaddress - connect to remove server
+- scp file user@Ipaddress:/file path - copy file into remote server
+- ifconfig - show network interface
+- ip adar - modern version of ifconfig
+- dig goole.com - detailed dns information
+- SS -tuln - modern version of netstat
