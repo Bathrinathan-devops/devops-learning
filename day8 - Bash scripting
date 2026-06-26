@@ -1,0 +1,20 @@
+##Day 8 - basj scripting 
+## Whats i bash scripting?
+  -Combining multiple commands into one file
+  -Automates repeatitive tasks
+  -used daily by devops engineers
+
+  ### KEY concepts:
+- .sh extension for shell scrits
+- #!/bin/bash - shebang line alwasy first
+-bash scripts.sh - command tto run script
+
+  ### commands learned:
+  -echo - print output
+  -read - take your input
+  varibales: NAME="Value"
+    user varinbles : $NAME
+  - if [ ] then else fi - conditions
+      -gt greater than
+      -lt less than
+      -qu equal to
