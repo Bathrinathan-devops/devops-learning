@@ -40,7 +40,7 @@ check_memory() {
 
    check_memory
    check_disk
-   chec_processes
+   check_processes
    check_alert
 
    echo "======================================"
