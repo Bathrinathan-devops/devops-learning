@@ -1,0 +1,37 @@
+## S3 - simple storage service
+  Like google drive but for application
+  used by netflix, instagram. companies worldwode
+
+  ### S3 KEY concepts
+Bucket - Folder on cloud
+objuct - Any file stored
+region - where bucket is stored
+public- anyone can access
+  private - only you can access.
+
+### Steps to create s2 biuck.
+  ## lower case, no space,. unique wirldwide. 3-63 characters
+
+## IAM - identity and access management, controls who can access what in AWS
+
+  user - person or app
+  group - collection of users
+  policy - list of permissions
+  role - temorary permissions.
+
+  ###VPC:
+  VPC - private network
+  subnet - division of network
+  CIDR - IP address rage
+  /2- - 4096 availale IP
+
+  ##availability zone:
+Mumbai has 3 speatae datacenters. if one fails- others keep running , thats gigh availablity
+
+  ## security groups -firewall rules, controls traffic to yout server , 
+Inboud - traffic coming into server
+  outbouyd - traffic going of server
+
+  port 22- SSH
+  port 80 - http ( website traffice
+  port 443 - https 9 secure website)
