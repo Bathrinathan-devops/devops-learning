@@ -1,0 +1,29 @@
+## Day 12 - AWS Cloud computing
+### what is cloud computing?
+  Old way - buy physical server ( expensive!)
+  new way - Rent from AWS (pay only what you use)
+
+### What is ASW?
+  Amazon web services
+  world biggest cloud platform
+  used by netflix, NASA , Facebook
+  Most in-demand for devops.
+
+Top 3 cloud providers.
+AWS - 32% market share (we use this)
+Azure - 23% market share
+GCP - 10% market share
+
+What is EC2?
+    EC2 = Elastice compute clod
+    virtual server on clod
+    like your laptop but on internet
+
+#### commands used on AWS server
+    sudo apt update - update server
+    sudo apt install git -y - install git
+    git cline <URL> - download from github
+
+    ### real devops workflow:
+    wriye code locally, push to github , pull on aws server. run on read cloud
+    
