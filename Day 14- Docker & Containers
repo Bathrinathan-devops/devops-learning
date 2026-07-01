@@ -1,0 +1,98 @@
+## Docker is the tool every company uses daily.
+
+### What is Docker?
+Imagine you build an app on your laptop, it works perfectly.
+You send it to you friend's laptop "it doesn't work!"
+why? Different OS, different settings, missing dependencies.
+Docker solves this exact problem.
+
+Docker = Shipping container!
+real world shipping container:
+-Same box work on ship, truck, train!
+-contents dont' matter!
+-Standard size everywhere!.
+
+###Docker Container:
+-Same app works on any computer
+-Includes everything needed!.
+-Run exactly the same everywhere!.
+
+Simple Analogy:
+Without Docker!
+"work on my machine" problem
+With Docker:
+"Works EVERYWHERE" soulution!.
+
+Image vs Container:
+Docker image = Recipe
+Docker Container = Actul cooked dish.
+
+one Recipe - Can make many dishes!.
+one image - Can run many containers
+
+Real example:
+Image : Ubuntu:latest
+Container 1 : Running ubuntu instace
+Container 2 : Another ubuntu instance
+container 3 : yet another instance
+
+All from SAME image
+All independent from each other.
+
+Docker vs VM.
+
+VM-Heavy-slow start-full os copy-few vms per server
+Docker-Light - strart in seconds-share host os- 100 of containers.
+
+HOST OS - Ubuntu - Containers- uses HOST os Kernel
+Containers are light-no separate Full os needed
+
+HOST OS ( Ubuntu)
+C1 | C2 | C3 | C4 
+app  app  app  app  - Light
+
+All share same host os kernal.
+
+Real example with my server:
+my AWS server : HOST OS = ubuntu 26.04
+
+When you install Docker on it:
+- All containers will SHARE this Ubuntu
+- No need to install separate OS for each container
+- super fast and lightweight
+
+Installing Docker only ASW SERVER:
+## sudo apt update - 
+then
+## sudo apt install docker.io -y - this install docker on server.
+
+After installation start the docker
+# sudo systemctl start docker
+# sudo systemctl enable docker
+
+verify docker is installed: 
+# docker --version
+
+## Now lets run first container !!
+sudo docker run hello-world - This is the traditional Docker command evey enginners runs.
+what will happen:
+Docker checks if "hello-world" image exists locally.
+if not, downloads from docker hub(internet)
+creates a container from that image
+runs it
+shows a welcome message
+container stops automatically
+
+Docker Client - talked to docker daemon
+Docker daemon - downloaded image from docker hub
+Docker daemon - create container
+container - ran and showed message
+output - steamed to your terminal.
+
+$ docker run - it ubuntu bash -
+sudo docker run - it ubuntu bash
+
+what this does:
+-it - interactive terminal mode
+ubuntu - download ubuntu image
+bash - start bash shell inside container
