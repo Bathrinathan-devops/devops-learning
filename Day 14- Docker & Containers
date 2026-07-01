@@ -96,3 +96,65 @@ what this does:
 -it - interactive terminal mode
 ubuntu - download ubuntu image
 bash - start bash shell inside container
+
+root @XXX- thats the containers termimal.
+
+Cat /etc/os-release:
+- Completely isolated
+- has its own file system
+- has it own process
+- separate from your server
+- light weight
+- started in seconds.
+
+what you can do inside this container : install software .create files, run applications, configure setting , test tings safely,
+
+The MAGIC of docker:
+break something inside container ?- No problem
+just exit and create new container
+server stay safe.
+
+real world user:
+Developer says: " I need python 3.8 enviroment"
+DevOps create conater:
+-Ubuntu+python 3.8 + dependencies.
+- works  same on every machine
+- No conficrs with other apps
+
+Commands:
+#See all running containers:
+sudo docker ps
+
+#See all container (including stoppes)
+sudo docker ps -a
+
+#see all download images:
+sudo docker images
+
+Container stops - when you exit
+image stays - downaloed forever
+
+Next time you run ubuntu container:
+no download needed 
+uses existsing mage
+starts instantly.
+
+Commands:
+sudo docker run --name mycontainer -it ubtunt bash
+apt update
+apt install vim -y
+exit
+
+start the stopped container:
+sudo docker start mycontainer
+remove a container:
+sudo docker rn mycontainer
+
+remove an image:
+sudo docker rmi hello-world.
+
+Alwasy remove container first
+then remove imafe
+
+- container - reference - image
+remove container- then remove image
